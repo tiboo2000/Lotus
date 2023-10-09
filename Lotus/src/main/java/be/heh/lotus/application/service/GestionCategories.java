@@ -6,12 +6,15 @@ import be.heh.lotus.port.out.Categories_Out;
 
 import java.util.ArrayList;
 
-public class gestionCategories implements UseCase_In_Categories {
+public class GestionCategories implements UseCase_In_Categories {
     ArrayList<Categories> categoriesList = new ArrayList<>();
     Categories_Out categoriesOut;
+    public GestionCategories(Categories_Out categoriesOut){
+        this.categoriesOut=categoriesOut;
+    }
     @Override
     public void add(Categories category) {
-        boolean isCategoryExist=categoriesOut.getCategories(category.getId());
+        boolean isCategoryExist=categoriesOut.verifyCategories(category.getId());
         if(!isCategoryExist){
             categoriesOut.addCategory(category);
         }
