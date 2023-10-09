@@ -22,7 +22,10 @@ public class GestionCategories implements UseCase_In_Categories {
 
     @Override
     public void remove(Categories category) {
-
+        boolean isCategoryExist=categoriesOut.verifyCategories(category.getId());
+        if (isCategoryExist){
+            categoriesOut.removeCategory(category);
+        }
     }
 
     @Override
