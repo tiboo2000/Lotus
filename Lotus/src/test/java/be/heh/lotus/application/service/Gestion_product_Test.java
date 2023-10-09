@@ -24,5 +24,6 @@ public class Gestion_product_Test {
         gestion1.add(prod1);
         verify(mocklist).add_Product(prod1);
 
+        verify(mocklist).remove_Product(prod1);
     }
 }
