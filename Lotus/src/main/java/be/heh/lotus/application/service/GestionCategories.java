@@ -39,7 +39,9 @@ public class GestionCategories implements UseCase_In_Categories {
         boolean isCategoryExist=categoriesOut.verifyCategories(category.getId());
         if (isCategoryExist){
             return category;
+        }else{
+            return null;
         }
-        return null;
+
     }
 }
