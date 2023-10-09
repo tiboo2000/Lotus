@@ -7,7 +7,7 @@ import be.heh.lotus.port.out.Categories_Out;
 import java.util.ArrayList;
 
 public class GestionCategories implements UseCase_In_Categories {
-    ArrayList<Categories> categoriesList = new ArrayList<>();
+
     Categories_Out categoriesOut;
     public GestionCategories(Categories_Out categoriesOut){
         this.categoriesOut=categoriesOut;
@@ -29,7 +29,17 @@ public class GestionCategories implements UseCase_In_Categories {
     }
 
     @Override
-    public Categories get() {
+    public ArrayList<Categories> get() {
+        ArrayList<Categories> categoriesList = new ArrayList<>();
+        categoriesList=categoriesOut.getCategories();
+        return categoriesList;
+    }
+    @Override
+    public Categories get(Categories category) {
+        boolean isCategoryExist=categoriesOut.verifyCategories(category.getId());
+        if (isCategoryExist){
+            return category;
+        }
         return null;
     }
 }
