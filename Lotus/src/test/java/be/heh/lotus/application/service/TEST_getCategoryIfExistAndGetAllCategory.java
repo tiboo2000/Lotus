@@ -12,7 +12,7 @@ import static org.mockito.Mockito.*;
 public class TEST_getCategoryIfExistAndGetAllCategory {
     private static final int ID_CATEGORY1=1;
     private static final Categories CATEGORY1=new Categories(1,"Ordinateur");
-    private static final Categories CATEGORY2=new Categories(1,"Ordinateur");
+    private static final Categories CATEGORY2=new Categories(2,"Tablette");
     private static final ArrayList<Categories> CATEGORIES_LIST =new ArrayList<>();
     private static final boolean CONDITION = true;
     @Test
