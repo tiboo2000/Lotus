@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public interface UseCase_In_Categories {
     public void add(Categories category);
-    public void remove(Categories category);
+    public void removeById(int idCategory);
     public ArrayList<Categories> get();
-    public Categories get(Categories category);
+    public Categories getById(int idCategory);
 }

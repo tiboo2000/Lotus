@@ -21,10 +21,10 @@ public class GestionCategories implements UseCase_In_Categories {
     }
 
     @Override
-    public void remove(Categories category) {
-        boolean isCategoryExist=categoriesOut.verifyCategories(category.getId());
+    public void removeById(int idCategory) {
+        boolean isCategoryExist=categoriesOut.verifyCategories(idCategory);
         if (isCategoryExist){
-            categoriesOut.removeCategory(category);
+            categoriesOut.removeCategoryById(idCategory);
         }
     }
 
@@ -35,10 +35,10 @@ public class GestionCategories implements UseCase_In_Categories {
         return categoriesList;
     }
     @Override
-    public Categories get(Categories category) {
-        boolean isCategoryExist=categoriesOut.verifyCategories(category.getId());
+    public Categories getById(int idCategory) {
+        boolean isCategoryExist=categoriesOut.verifyCategories(idCategory);
         if (isCategoryExist){
-            return category;
+            return categoriesOut.getCategoriesById(idCategory);
         }else{
             return null;
         }
