@@ -18,7 +18,7 @@ public class Gestion_product_Test {
     void test_if_exist(){
 
         Product_Out mocklist = Mockito.mock(Product_Out.class);
-        when(mocklist.get_Product_Id(1)).thenReturn(true);
+        when(mocklist.fetch_Product_Id(1)).thenReturn(true);
 
         Gestion_product gestion1 = new Gestion_product(mocklist);
         gestion1.add(prod1);
@@ -38,7 +38,7 @@ public class Gestion_product_Test {
         products.add(produit2);
 
         Product_Out productOutMock = Mockito.mock(Product_Out.class);
-        when(productOutMock.get_All_Product_By_Id_Category(1)).thenReturn(products);
+        when(productOutMock.fetch_All_Product_By_Id_Category(1)).thenReturn(products);
 
         Gestion_product gestionProduct = new Gestion_product(productOutMock);
 
@@ -46,5 +46,4 @@ public class Gestion_product_Test {
 
         Assertions.assertEquals(1, productsFromCategory.get(0).getId_cat());
     }
-
 }

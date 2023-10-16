@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public interface UseCase_In_Product {
     public void add (Product product);
-    public void del (Product product);
+    public void del (Product product); //Refaire avec l'id
     public Product get_Product_By_ID_Product(int id);
     public ArrayList<Product> get_All_Product_By_Id_Category(int id_cat);
 }
