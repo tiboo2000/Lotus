@@ -23,9 +23,9 @@ public class Gestion_product implements UseCase_In_Product {
     }
 
     @Override
-    public void del(Product product) {
-        if (product_out.fetch_Product_Id(product.getId())) {
-            product_out.remove_Product(product);
+    public void del(int id) {
+        if (product_out.fetch_Product_Id(id)){
+            product_out.remove_Product(id);
         } else {
             System.out.println("Le produit n'existe pas !");
         }
