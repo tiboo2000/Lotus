@@ -2,6 +2,7 @@ import './App.css';
 import Category from './composant/test/category';
 import Product from './composant/test/product';
 import User from './composant/test/user';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   
