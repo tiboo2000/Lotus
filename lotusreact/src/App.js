@@ -1,27 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Category from './composant/test/category';
+import Product from './composant/test/product';
+import User from './composant/test/user';
 
 function App() {
-  const axios = require('axios');
-
-  let config = {
-    method: 'get',
-    maxBodyLength: Infinity,
-    url: 'https://virtserver.swaggerhub.com/KOUPTCHINSKYNG/test/1.0.1/category/0',
-    headers: { }
-  };
-
-  axios.request(config)
-  .then((response) => {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+  
   
   return (
     <div className="App">
-      
+      <Category></Category>
+      <Product></Product>
+      <User></User>
     </div>
   );
 }
