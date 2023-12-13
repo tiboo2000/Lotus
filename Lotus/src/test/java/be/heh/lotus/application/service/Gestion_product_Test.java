@@ -1,7 +1,8 @@
 package be.heh.lotus.application.service;
 
-import be.heh.lotus.application.domain.Product;
-import be.heh.lotus.port.out.Product_Out;
+import be.heh.lotus.application.domain.model.Product;
+import be.heh.lotus.application.domain.service.Gestion_product;
+import be.heh.lotus.application.port.out.Product_Out;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

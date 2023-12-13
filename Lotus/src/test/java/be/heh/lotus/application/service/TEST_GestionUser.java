@@ -1,17 +1,14 @@
 package be.heh.lotus.application.service;
 
-import be.heh.lotus.application.domain.Categories;
-import be.heh.lotus.application.domain.User;
+import be.heh.lotus.application.domain.model.User;
 
 import java.util.ArrayList;
 
-import be.heh.lotus.port.out.Categories_Out;
-import be.heh.lotus.port.out.GestionUser_Out;
+import be.heh.lotus.application.domain.service.GestionUser;
+import be.heh.lotus.application.port.out.GestionUser_Out;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 public class TEST_GestionUser {
 

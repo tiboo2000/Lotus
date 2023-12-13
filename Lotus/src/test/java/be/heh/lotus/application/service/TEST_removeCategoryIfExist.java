@@ -1,7 +1,7 @@
 package be.heh.lotus.application.service;
 
-import be.heh.lotus.application.domain.Categories;
-import be.heh.lotus.port.out.Categories_Out;
+import be.heh.lotus.application.domain.service.GestionCategories;
+import be.heh.lotus.application.port.out.Categories_Out;
 import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.*;

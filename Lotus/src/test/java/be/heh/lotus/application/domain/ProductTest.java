@@ -1,8 +1,8 @@
 package be.heh.lotus.application.domain;
 
+import be.heh.lotus.application.domain.model.Product;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.springframework.util.Assert;
 
 public class ProductTest {
     @Test

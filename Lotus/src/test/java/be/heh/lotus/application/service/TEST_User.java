@@ -1,6 +1,6 @@
 package be.heh.lotus.application.service;
 
-import be.heh.lotus.application.domain.User;
+import be.heh.lotus.application.domain.model.User;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

@@ -43,7 +43,7 @@ paths:
     post:
       tags:
       - category
-      summary: Add a category pet to the store
+      summary: Add a category to the store
       operationId: addCategory
       requestBody:
         $ref: '#/components/requestBodies/Category'
