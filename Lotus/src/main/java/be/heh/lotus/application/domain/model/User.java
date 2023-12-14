@@ -8,20 +8,20 @@ public class User{
     private double Solde;
 
     private int id;
-    private ArrayList<String> Pannier;
+    private ArrayList<Product> Pannier;
 
-    public User(String UserName, String Password ,double Solde ,int id ,ArrayList<String> Pannier){
+    public User(String UserName, String Password ,double Solde ,int id ,ArrayList<Product> Pannier){
         this.UserName = UserName;
         this.Password = Password;
         this.Solde = Solde;
         this.id = id;
         this.Pannier = Pannier;
     }
-    public ArrayList<String> getPannier() {
+    public ArrayList<Product> getPannier() {
         return Pannier;
     }
 
-    public void setPannier(ArrayList<String> pannier) {
+    public void setPannier(ArrayList<Product> pannier) {
         Pannier = pannier;
     }
 

@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Lotus.iml" filepath="$PROJECT_DIR$/.idea/Lotus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lotus.Lotus.iml" filepath="$PROJECT_DIR$/.idea/modules/Lotus.Lotus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lotus.Lotus.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/Lotus.Lotus.main~1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lotus.Lotus.test~1.iml" filepath="$PROJECT_DIR$/.idea/modules/Lotus.Lotus.test~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lotus.Lotus.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Lotus.Lotus.main.iml" />
     </modules>
   </component>
 </project>

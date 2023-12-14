@@ -1,5 +1,7 @@
 package be.heh.lotus.application.domain.service;
 
+
+import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.domain.model.User;
 import org.junit.jupiter.api.Test;
 
@@ -8,11 +10,11 @@ import java.util.ArrayList;
 import static org.springframework.test.util.AssertionErrors.assertEquals;
 
 public class TEST_User {
-    private static final ArrayList<String> initPannier = new ArrayList<>();
-    private static final ArrayList<String> chngPannier = new ArrayList<>(){{
-        add("Produit1");
-        add("Produit2");
-        add("Produit3");
+    private static final ArrayList<Product> initPannier = new ArrayList<>();
+    private static final ArrayList<Product> chngPannier = new ArrayList<>(){{
+        add(new Product(1,"Produit1",1,1));
+        add(new Product(2,"Produit2",2,1));
+        add(new Product(3,"Produit3",3,1));
     }};;
     User user1 = new User("","",0,1,initPannier);
 
