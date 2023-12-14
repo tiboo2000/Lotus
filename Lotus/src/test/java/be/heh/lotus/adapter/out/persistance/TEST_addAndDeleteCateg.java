@@ -22,7 +22,7 @@ public class TEST_addAndDeleteCateg {
         persistence.addCategory(CATEGORY);
         List<Categories> categoriesList = persistence.getCategories();
         Assertions.assertEquals(4,categoriesList.size());
-        persistence.removeCategoryById(9);
+        persistence.removeCategoryById(12);
         categoriesList = persistence.getCategories();
         Assertions.assertEquals(3,categoriesList.size());
     }
