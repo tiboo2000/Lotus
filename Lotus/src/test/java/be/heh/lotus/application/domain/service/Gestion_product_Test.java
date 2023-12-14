@@ -1,4 +1,4 @@
-package be.heh.lotus.application.service;
+package be.heh.lotus.application.domain.service;
 
 import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.domain.service.Gestion_product;
@@ -25,7 +25,7 @@ public class Gestion_product_Test {
         gestion1.add(prod1);
         verify(mocklist).add_Product(prod1);
 
-        verify(mocklist).remove_Product(prod1);
+        verify(mocklist).remove_Product(1);
     }
 
     @Test

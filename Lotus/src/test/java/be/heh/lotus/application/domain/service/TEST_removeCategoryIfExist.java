@@ -1,4 +1,4 @@
-package be.heh.lotus.application.service;
+package be.heh.lotus.application.domain.service;
 
 import be.heh.lotus.application.domain.service.GestionCategories;
 import be.heh.lotus.application.port.out.Categories_Out;

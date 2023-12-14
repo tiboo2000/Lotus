@@ -1,4 +1,4 @@
-package be.heh.lotus.application.domain;
+package be.heh.lotus.application.domain.model;
 
 import be.heh.lotus.application.domain.model.Product;
 import org.junit.jupiter.api.Assertions;

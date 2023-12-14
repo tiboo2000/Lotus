@@ -1,7 +1,6 @@
-package be.heh.lotus.application.service;
+package be.heh.lotus.adapter.out.persistance;
 
 import be.heh.lotus.LotusApp;
-import be.heh.lotus.adapter.out.persistance.CategoryAdapterPersistence;
 import be.heh.lotus.adapter.out.persistance.repository.CategoriesRepository;
 import be.heh.lotus.application.domain.model.Categories;
 import org.junit.jupiter.api.Assertions;
@@ -12,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 
 @SpringBootTest(classes= LotusApp.class)
-public class TEST_DBinterrogation {
+public class TEST_getAllCateg {
     @Autowired
     private CategoriesRepository categoriesRepository;
     private CategoryAdapterPersistence persistence;
