@@ -6,7 +6,7 @@ import be.heh.lotus.application.port.in.UseCase_In_Bag;
 
 import java.util.ArrayList;
 
-public class Gestion_Bag implements UseCase_In_Bag {
+public class Gestion_Bag implements UseCase_In_Bag {//implement les cas d'utulisation du bag donc les méthodes défini dans le usecase
 
     @Override
     public void AddToBag(Product produit, Bag bag) {

@@ -2,7 +2,7 @@ package be.heh.lotus.application.domain.model;
 
 import java.util.ArrayList;
 
-public class Bag {
+public class Bag {//définition de ce qu'est un panier + methode pour acceder au information du panier et pour le modifier
     private ArrayList<Product> ListProduct;
     private User BagOfUser ;
 
