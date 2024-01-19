@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e13f3f3-9646-433b-bc79-e28fb3f17376" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/model/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/model/Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/service/Gestion_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/service/Gestion_Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/in/UseCase_In_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/in/UseCase_In_Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/out/Bag_Out.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/out/Bag_Out.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Gestion_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Gestion_Bag.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +114,7 @@
       <workItem from="1702470818953" duration="41000" />
       <workItem from="1705669283426" duration="159000" />
       <workItem from="1705669494275" duration="81000" />
-      <workItem from="1705675311930" duration="12542000" />
+      <workItem from="1705675311930" duration="13701000" />
     </task>
     <servers />
   </component>
@@ -168,7 +162,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="rework" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
