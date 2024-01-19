@@ -17,25 +17,19 @@ public class CategoriesRepository {
         return jdbc.query(sql,new CategoryRowMapper());
     }
     public List<Categories> getCategoryRep(int id){
-        String sql ="SELECT category.*"+
-                "FROM category"+
-                "WHERE category.id = ?;";
+        String sql ="SELECT category.* FROM category WHERE category.id = ?;";
         return jdbc.query(sql,new CategoryRowMapper(),id);
     }
     public void addCategoryRep(Categories category){
-        String sql ="INSERT INTO category (name)"+
-                "VALUES (?);";
-        jdbc.update(sql,new CategoryRowMapper(),category.getName());
+        String sql ="INSERT INTO category (name) VALUES (?);";
+        jdbc.update(sql,category.getName());
     }
     public void removeCategoryRep(int id){
-        String sql ="DELETE FROM category"+
-                "WHERE id = ?;";
-        jdbc.update(sql,new CategoryRowMapper(),id);
+        String sql ="DELETE FROM category WHERE id = ?;";
+        jdbc.update(sql,id);
     }
     public boolean verifyCategoryRep(int id){
-        String sql ="SELECT category.*"+
-                "FROM category"+
-                "WHERE category.id = ?;";
+        String sql ="SELECT category.* FROM category WHERE category.id = ?;";
         if (jdbc.query(sql,new CategoryRowMapper(),id)==null){
             return false;
         }

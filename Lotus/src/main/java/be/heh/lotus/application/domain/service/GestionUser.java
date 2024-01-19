@@ -1,5 +1,6 @@
 package be.heh.lotus.application.domain.service;
 
+import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.domain.model.User;
 import be.heh.lotus.application.port.in.UseCase_In_User;
 import be.heh.lotus.application.port.out.GestionUser_Out;
@@ -14,7 +15,7 @@ public class GestionUser implements UseCase_In_User {
     }
 
     @Override
-    public void ChangePannier(ArrayList<String> Pannier, User user) {
+    public void ChangePannier(ArrayList<Product> Pannier, User user) {
         if(!User_Out.fetchUser(user.getId())){
             if(user.getPannier() != Pannier){
                 user.setPannier(Pannier);
