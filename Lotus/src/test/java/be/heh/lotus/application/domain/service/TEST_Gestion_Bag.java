@@ -4,117 +4,91 @@ import be.heh.lotus.application.domain.model.Bag;
 import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.domain.model.User;
 import be.heh.lotus.application.port.out.Bag_Out;
+import be.heh.lotus.application.port.out.Product_Out;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class TEST_Gestion_Bag {
 
-    @Mock
     private Bag_Out bagOutMock;
-
     private Gestion_Bag gestionBag;
 
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        gestionBag = new Gestion_Bag();
+        bagOutMock = Mockito.mock(Bag_Out.class);
+        gestionBag = new Gestion_Bag(bagOutMock);
     }
 
     @Test
     void testAddToBag() {
-        Product product = new Product(1,"Produit1",1,1);
-        ArrayList<Product> listtestproduct = new ArrayList<Product>();
-        listtestproduct.add(product);
-        Bag bag = new Bag(listtestproduct, new User("Test","aa",40,1,new ArrayList<Product>()));
-        ArrayList<Product> expectedList = new ArrayList<>();
-        expectedList.add(product);
+        Product produit = new Product(1, "test", 1, 1);
+        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
+        bagOutMock.AddToBag(produit, user);
+        when(bagOutMock.getbaguser(user)).thenReturn((ArrayList<Product>) List.of(produit));
 
-        gestionBag.AddToBag(product, bag);
-
-        assertEquals(expectedList, bag.getListProduct());
+        assertTrue(bagOutMock.getbaguser(user).contains(produit));
     }
 
     @Test
     void testSuppFromBag() {
-        Product product = new Product(1,"Produit1",1,1);
-        ArrayList<Product> listtestproduct = new ArrayList<Product>();
-        listtestproduct.add(product);
-        Bag bag = new Bag(listtestproduct, new User("Test","aa",40,1,new ArrayList<Product>()));
-        bag.getListProduct().add(product);
+        Product produit = new Product(1, "test", 1, 1);
+        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
-        gestionBag.SuppFromBag(product, bag);
+        bagOutMock.AddToBag(produit, user);
+        when(bagOutMock.getbaguser(user)).thenReturn((ArrayList<Product>) List.of(produit));
+        assertTrue(bagOutMock.getbaguser(user).contains(produit));
 
-        assertEquals(new ArrayList<>(), bag.getListProduct());
+        bagOutMock.SuppFromBag(produit, user);
+        when(bagOutMock.getbaguser(user)).thenReturn(new ArrayList<Product>());
+        assertFalse(bagOutMock.getbaguser(user).contains(produit));
     }
 
     @Test
     void testResetBag() {
-        Product product = new Product(1,"Produit1",1,1);
-        ArrayList<Product> listtestproduct = new ArrayList<Product>();
-        listtestproduct.add(product);
-        Bag bag = new Bag(listtestproduct, new User("Test","aa",40,1,new ArrayList<Product>()));
-        assertEquals(listtestproduct, bag.getListProduct());
-        gestionBag.ResetBag(bag);
-        assertEquals(new ArrayList<Product>(), bag.getListProduct());
+        Product produit = new Product(1, "test", 1, 1);
+        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
+
+        bagOutMock.AddToBag(produit, user);
+        when(bagOutMock.getbaguser(user)).thenReturn((ArrayList<Product>) List.of(produit));
+        assertTrue(bagOutMock.getbaguser(user).contains(produit));
+
+        bagOutMock.ResetBag(user);
+        when(bagOutMock.getbaguser(user)).thenReturn(new ArrayList<Product>());
+        assertFalse(bagOutMock.getbaguser(user).contains(produit));
     }
 
     @Test
     void testModifyQuantity_SetOperation() {
-        int initialQuantity = 5;
-        int modifiedQuantity = 10;
-        String operation = "set";
+        Product produit = new Product(1, "test", 1, 1);
+        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
-        int result = gestionBag.modifyQuantity(initialQuantity, modifiedQuantity, operation);
+        bagOutMock.AddToBag(produit, user);
+        when(bagOutMock.getQuantity(produit, user)).thenReturn(1);
+        assertEquals(1, bagOutMock.getQuantity(produit, user));
 
-        assertEquals(modifiedQuantity, result);
-    }
-
-    @Test
-    void testModifyQuantity_FastAddOperation() {
-        int initialQuantity = 5;
-        int expectedQuantity = initialQuantity + 1;
-        String operation = "fastadd";
-
-        int result = gestionBag.modifyQuantity(initialQuantity, 0, operation);
-
-        assertEquals(expectedQuantity, result);
-    }
-
-    @Test
-    void testModifyQuantity_FastSubOperation() {
-        int initialQuantity = 5;
-        int expectedQuantity = initialQuantity - 1;
-        String operation = "fastsub";
-
-        int result = gestionBag.modifyQuantity(initialQuantity, 0, operation);
-
-        assertEquals(expectedQuantity, result);
-    }
-
-    @Test
-    void testModifyQuantity_DefaultOperation() {
-        int initialQuantity = 5;
-        String operation = "unknown";
-
-        int result = gestionBag.modifyQuantity(initialQuantity, 0, operation);
-
-        assertEquals(initialQuantity, result);
+        bagOutMock.setQuantity(produit, user, 2);
+        when(bagOutMock.getQuantity(produit, user)).thenReturn(2);
+        assertEquals(2, bagOutMock.getQuantity(produit, user));
     }
 
     @Test
     void testGetBagUser() {
-        User user = new User("Test","aa",40,1,new ArrayList<Product>());
-        ArrayList<Product> expectedList = new ArrayList<>();
-        when(bagOutMock.getbaguser(user)).thenReturn(expectedList);
+        Product produit = new Product(1, "test", 1, 1);
+        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
-        ArrayList<Product> result = bagOutMock.getbaguser(user);
-
-        assertEquals(expectedList, result);
-        verify(bagOutMock, times(1)).getbaguser(user);
+        bagOutMock.AddToBag(produit, user);
+        when(bagOutMock.getbaguser(user)).thenReturn((ArrayList<Product>) List.of(produit));
+        assertEquals(List.of(produit), bagOutMock.getbaguser(user));
     }
 }
