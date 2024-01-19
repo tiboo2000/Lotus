@@ -17,7 +17,7 @@ public class Config {
     CategoriesRepository categoriesRepository;
     Categories_Out categoriesOut;
     @Bean
-    public UseCase_In_Categories getBestUseCase(){
+    public UseCase_In_Categories getCategoryUseCase(){
         return new GestionCategories(new CategoryAdapterPersistence(categoriesRepository));
     }
 }
