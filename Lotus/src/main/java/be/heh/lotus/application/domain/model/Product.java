@@ -3,15 +3,17 @@ package be.heh.lotus.application.domain.model;
 public class Product {
     private int id;
     private String name;
-    private double prix;
-    private int id_cat;
-    public Product(int id,String name,double prix,int id_cat){
+    private double price;
+    private int categoryId;
+
+    public Product(int id, String name, double price, int categoryId) {
         this.id = id;
         this.name = name;
-        this.prix = prix;
-        this.id_cat = id_cat;
+        this.price = price;
+        this.categoryId = categoryId;
     }
 
+    // Getters
     public int getId() {
         return id;
     }
@@ -20,11 +22,24 @@ public class Product {
         return name;
     }
 
-    public double getPrix() {
-        return prix;
+    public double getPrice() {
+        return price;
     }
 
-    public int getId_cat(){
-        return id_cat;
+    public int getCategoryID() {
+        return categoryId;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setCategoryID(int categoryId) {
+        this.categoryId = categoryId;
     }
 }
