@@ -1,7 +1,6 @@
 package be.heh.lotus.adapter.out.persistance.repository;
 
 import be.heh.lotus.application.domain.model.Bag;
-import be.heh.lotus.application.domain.model.Categories;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
