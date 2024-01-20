@@ -23,30 +23,33 @@ class TEST_Gestion_Bag {
     private Bag_Out bagOutMock;
     private Gestion_Bag gestionBag;
 
+    private ArrayList<Product> baglist = new ArrayList<Product>();
+
+    private Product produit = new Product(1, "test", 1, 1);
+
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
         bagOutMock = Mockito.mock(Bag_Out.class);
         gestionBag = new Gestion_Bag(bagOutMock);
+        baglist.add(produit);
     }
 
     @Test
     void testAddToBag() {
-        Product produit = new Product(1, "test", 1, 1);
         User user = new User("test", "test", 50, 12, new ArrayList<Product>());
         bagOutMock.AddToBag(produit, user);
-        when(bagOutMock.getbaguser(user)).thenReturn((ArrayList<Product>) List.of(produit));
 
+        when(bagOutMock.getbaguser(user)).thenReturn(baglist);
         assertTrue(bagOutMock.getbaguser(user).contains(produit));
     }
 
     @Test
     void testSuppFromBag() {
-        Product produit = new Product(1, "test", 1, 1);
         User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
         bagOutMock.AddToBag(produit, user);
-        when(bagOutMock.getbaguser(user)).thenReturn((ArrayList<Product>) List.of(produit));
+        when(bagOutMock.getbaguser(user)).thenReturn(baglist);
         assertTrue(bagOutMock.getbaguser(user).contains(produit));
 
         bagOutMock.SuppFromBag(produit, user);
@@ -56,11 +59,10 @@ class TEST_Gestion_Bag {
 
     @Test
     void testResetBag() {
-        Product produit = new Product(1, "test", 1, 1);
         User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
         bagOutMock.AddToBag(produit, user);
-        when(bagOutMock.getbaguser(user)).thenReturn((ArrayList<Product>) List.of(produit));
+        when(bagOutMock.getbaguser(user)).thenReturn(baglist);
         assertTrue(bagOutMock.getbaguser(user).contains(produit));
 
         bagOutMock.ResetBag(user);
@@ -70,7 +72,6 @@ class TEST_Gestion_Bag {
 
     @Test
     void testModifyQuantity_SetOperation() {
-        Product produit = new Product(1, "test", 1, 1);
         User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
         bagOutMock.AddToBag(produit, user);
@@ -84,11 +85,11 @@ class TEST_Gestion_Bag {
 
     @Test
     void testGetBagUser() {
-        Product produit = new Product(1, "test", 1, 1);
         User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
         bagOutMock.AddToBag(produit, user);
-        when(bagOutMock.getbaguser(user)).thenReturn((ArrayList<Product>) List.of(produit));
+
+        when(bagOutMock.getbaguser(user)).thenReturn(baglist);
         assertEquals(List.of(produit), bagOutMock.getbaguser(user));
     }
 }

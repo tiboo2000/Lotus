@@ -1,7 +1,6 @@
 package be.heh.lotus.port.in;
 
-import be.heh.lotus.application.domain.Product;
-
+import be.heh.lotus.application.domain.model.Product;
 import java.util.ArrayList;
 
 public interface UseCase_In_Product {

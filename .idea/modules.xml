@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Lotus.iml" filepath="$PROJECT_DIR$/.idea/Lotus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/be.heh.Lotus.main.iml" filepath="$PROJECT_DIR$/.idea/modules/be.heh.Lotus.main.iml" />
     </modules>
   </component>
 </project>
