@@ -16,7 +16,7 @@ public class BagAdapterPersistence implements Bag_Out {
     }
     @Override
     public void AddToBag(Product produit, User user) {
-
+        bagRepository.addBag(produit,user);
     }
 
     @Override

@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e13f3f3-9646-433b-bc79-e28fb3f17376" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c1676ac1-459a-489e-a490-2bc7089a0477.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c1676ac1-459a-489e-a490-2bc7089a0477/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c1676ac1-459a-489e-a490-2bc7089a0477/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c1676ac1-459a-489e-a490-2bc7089a0477/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c1676ac1-459a-489e-a490-2bc7089a0477/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/BagAdapterPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/BagAdapterPersistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/model/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/model/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/resources/schemaBag.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/resources/schemaBag.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +75,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Database Script.schemaBag.sql.executor&quot;: &quot;Run&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Gradle.TEST_Bag.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TEST_Bag.testBagInitialization (1).executor&quot;: &quot;Run&quot;,
@@ -84,9 +96,23 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;4b597c9c-3db7-4f19-bd5c-7cee839c01fa&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect&quot;: [
+      &quot;GenericSQL&quot;
+    ]
   }
 }</component>
-  <component name="RunManager" selected="Gradle.TEST_Gestion_Bag">
+  <component name="RunManager" selected="Database Script.schemaBag.sql">
+    <configuration name="schemaBag.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/Lotus/src/main/resources/schemaBag.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="4b597c9c-3db7-4f19-bd5c-7cee839c01fa" />
+      <method v="2" />
+    </configuration>
     <configuration name="TEST_Bag" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -193,6 +219,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Database Script.schemaBag.sql" />
         <item itemvalue="Gradle.TEST_Gestion_Bag" />
         <item itemvalue="Gradle.TEST_Bag.testBagInitialization (1)" />
         <item itemvalue="Gradle.TEST_Bag.testBagInitialization" />
@@ -228,7 +255,8 @@
       <workItem from="1705669494275" duration="81000" />
       <workItem from="1705675311930" duration="17453000" />
       <workItem from="1705744954800" duration="4099000" />
-      <workItem from="1705749974770" duration="2551000" />
+      <workItem from="1705749974770" duration="6295000" />
+      <workItem from="1705790456146" duration="2832000" />
     </task>
     <servers />
   </component>

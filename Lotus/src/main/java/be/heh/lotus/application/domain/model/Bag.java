@@ -10,6 +10,9 @@ import java.util.LinkedHashMap;
 @Getter
 @Setter
 public class Bag {
+
+    private int id;
+
     private LinkedHashMap<Product, Integer> ListProduct;
 
     private User BagOfUser ;
