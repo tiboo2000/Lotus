@@ -32,4 +32,12 @@ public class ProductTest {
         Product product = new Product(1, "yeux", 1000, 1);
         Assertions.assertEquals(1, product.getCategoryID());
     }
+
+    // Test si la méthode retourne la bonne catégorie qui a été modifiée
+    @Test
+    public void whenSettingCategoryID_shouldUpdateCategoryID() {
+        Product product = new Product(1, "yeux", 1000, 1);
+        product.setCategoryID(2);
+        Assertions.assertEquals(2, product.getCategoryID());
+    }
 }
