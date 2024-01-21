@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e13f3f3-9646-433b-bc79-e28fb3f17376" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/my_database.rtYkTA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/my_database.rtYkTA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/my_database.rtYkTA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4b597c9c-3db7-4f19-bd5c-7cee839c01fa/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a638e9b2-19bb-4308-acb4-3f56dd6d35be.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a638e9b2-19bb-4308-acb4-3f56dd6d35be.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a638e9b2-19bb-4308-acb4-3f56dd6d35be/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a638e9b2-19bb-4308-acb4-3f56dd6d35be/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/BagAdapterPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/BagAdapterPersistence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/adapter/out/persistance/TEST_addToBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/adapter/out/persistance/TEST_addToBag.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +64,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -76,6 +91,10 @@
     "Gradle.TEST_Gestion_Bag.executor": "Run",
     "Gradle.TEST_addToBag.getall.executor": "Run",
     "Gradle.TEST_addToBag.testAddToBag.executor": "Run",
+    "Gradle.TEST_addToBag.testGetQuantity.executor": "Run",
+    "Gradle.TEST_addToBag.testResetBag.executor": "Run",
+    "Gradle.TEST_addToBag.testSetQuantity.executor": "Run",
+    "Gradle.TEST_addToBag.testSuppFromBag.executor": "Run",
     "Gradle.TEST_getAllCateg.testgetdb.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -98,68 +117,15 @@
   "keyToStringList": {
     "RunConfigurationTargetLRU": [
       "4b597c9c-3db7-4f19-bd5c-7cee839c01fa",
-      "a638e9b2-19bb-4308-acb4-3f56dd6d35be"
+      "a638e9b2-19bb-4308-acb4-3f56dd6d35be",
+      "41e4b2a6-47e9-407b-91fe-7414cbc1734b"
     ],
     "com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect": [
       "GenericSQL"
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TEST_addToBag.testAddToBag">
-    <configuration name="schemaBag.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/Lotus/src/main/resources/schemaBag.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="a638e9b2-19bb-4308-acb4-3f56dd6d35be" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TEST_Gestion_Bag" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Lotus" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;be.heh.lotus.application.domain.service.TEST_Gestion_Bag&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TEST_addToBag.getall" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Lotus" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;be.heh.lotus.adapter.out.persistance.TEST_addToBag.getall&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.TEST_addToBag.testSetQuantity">
     <configuration name="TEST_addToBag.testAddToBag" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,7 +150,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TEST_getAllCateg.testgetdb" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TEST_addToBag.testGetQuantity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Lotus" />
@@ -197,7 +163,79 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;be.heh.lotus.adapter.out.persistance.TEST_getAllCateg.testgetdb&quot;" />
+            <option value="&quot;be.heh.lotus.adapter.out.persistance.TEST_addToBag.testGetQuantity&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TEST_addToBag.testResetBag" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Lotus" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;be.heh.lotus.adapter.out.persistance.TEST_addToBag.testResetBag&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TEST_addToBag.testSetQuantity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Lotus" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;be.heh.lotus.adapter.out.persistance.TEST_addToBag.testSetQuantity&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TEST_addToBag.testSuppFromBag" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Lotus" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;be.heh.lotus.adapter.out.persistance.TEST_addToBag.testSuppFromBag&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -218,11 +256,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TEST_addToBag.testSetQuantity" />
+        <item itemvalue="Gradle.TEST_addToBag.testGetQuantity" />
+        <item itemvalue="Gradle.TEST_addToBag.testResetBag" />
         <item itemvalue="Gradle.TEST_addToBag.testAddToBag" />
-        <item itemvalue="Gradle.TEST_addToBag.getall" />
-        <item itemvalue="Database Script.schemaBag.sql" />
-        <item itemvalue="Gradle.TEST_getAllCateg.testgetdb" />
-        <item itemvalue="Gradle.TEST_Gestion_Bag" />
+        <item itemvalue="Gradle.TEST_addToBag.testSuppFromBag" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +293,8 @@
       <workItem from="1705675311930" duration="17453000" />
       <workItem from="1705744954800" duration="4099000" />
       <workItem from="1705749974770" duration="6295000" />
-      <workItem from="1705790456146" duration="13441000" />
+      <workItem from="1705790456146" duration="13559000" />
+      <workItem from="1705836066653" duration="11451000" />
     </task>
     <servers />
   </component>

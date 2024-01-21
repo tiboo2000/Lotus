@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>758</IntrospectionStateNumber>
+      <IntrospectionStateNumber>746</IntrospectionStateNumber>
       <ServerVersion>16.1</ServerVersion>
-      <StartupTime>1705836088</StartupTime>
+      <StartupTime>1705843743</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -805,7 +805,7 @@ false Zulu
 13191||10|C|G
 13191||-9223372036854775808|U|G
 13191||10|U|G</Grants>
-      <IntrospectionStateNumber>758</IntrospectionStateNumber>
+      <IntrospectionStateNumber>746</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4224,8 +4224,8 @@ false Zulu
     <schema id="264" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>758</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-01-21.13:26:25</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>746</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-01-21.13:30:24</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>523</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4235,12 +4235,12 @@ false Zulu
       <ObjectId>16389</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>750</StateNumber>
+      <StateNumber>745</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <table id="266" parent="264" name="bag">
       <ObjectId>16390</ObjectId>
-      <StateNumber>750</StateNumber>
+      <StateNumber>745</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4249,7 +4249,7 @@ false Zulu
       <DefaultExpression>nextval(&apos;bag_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>750</StateNumber>
+      <StateNumber>745</StateNumber>
       <SequenceId>16389</SequenceId>
       <TypeId>23</TypeId>
     </column>
@@ -4257,14 +4257,14 @@ false Zulu
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>750</StateNumber>
+      <StateNumber>745</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="269" parent="266" name="bagcontent">
       <DasType>varchar(10000)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>750</StateNumber>
+      <StateNumber>745</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="270" parent="266" name="bag_pkey">
@@ -4272,7 +4272,7 @@ false Zulu
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16396</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>750</StateNumber>
+      <StateNumber>745</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
@@ -4280,7 +4280,7 @@ false Zulu
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16397</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>750</StateNumber>
+      <StateNumber>745</StateNumber>
       <UnderlyingIndexId>16396</UnderlyingIndexId>
     </key>
   </database-model>

@@ -15,24 +15,16 @@ public class BagAdapterPersistence implements Bag_Out {
         this.bagRepository=bagRepository;
     }
     @Override
-    public void AddToBag(Product produit, String user) {
-        bagRepository.addBag(produit,user);
-    }
+    public void AddToBag(Product produit, String user) { bagRepository.addBag(produit,user); }
 
     @Override
-    public void SuppFromBag(Product produit, String user) {
-        bagRepository.deleteFromBag(produit,user);
-    }
+    public void SuppFromBag(Product produit, String user) { bagRepository.deleteFromBag(produit,user);}
 
     @Override
-    public void ResetBag(String user) {
-        bagRepository.resetBag(user);
-    }
+    public void ResetBag(String user) { bagRepository.resetBag(user);}
 
     @Override
-    public void setQuantity(Product produit, String user, int quantity) {
-        bagRepository.setQuantity(produit,user,quantity);
-    }
+    public void setQuantity(Product produit, String user, int quantity) { bagRepository.setQuantity(produit,user,quantity);}
 
     @Override
     public int getQuantity(Product produit, String user) {
