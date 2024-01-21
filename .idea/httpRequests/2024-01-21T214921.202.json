@@ -1,0 +1,18 @@
+{
+  "id": 0,
+  "user": "test",
+  "listProduct": [
+    {
+      "id": 1,
+      "name": "test",
+      "price": 1.0,
+      "categoryID": 1
+    },
+    {
+      "id": 1,
+      "name": "test",
+      "price": 1.0,
+      "categoryID": 1
+    }
+  ]
+}
