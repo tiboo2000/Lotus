@@ -32,7 +32,10 @@ public class BagRepository {
         }
         else {
             String sql ="UPDATE bag SET bagcontent = ? WHERE username = ?;";
-            ArrayList<Product> ListProduct = getbaguser(user);
+            ArrayList<Product> ListProduct = new ArrayList<>();
+            getbaguser(user).getListProduct().forEach((n) -> {
+                ListProduct.add(n);
+            });
             ListProduct.add(produit);
             Gson gson = new Gson();
             String json = gson.toJson(ListProduct);
@@ -41,7 +44,10 @@ public class BagRepository {
     }
 
     public int getQuantity(Product produit, String user){
-        ArrayList<Product> temp = getbaguser(user);
+        ArrayList<Product> temp = new ArrayList<>();
+        getbaguser(user).getListProduct().forEach((n) -> {
+            temp.add(n);
+        });
         final int[] quantity = {0};
         temp.forEach((n) -> {
             if(Objects.equals(produit.getName(), n.getName())){
@@ -51,7 +57,7 @@ public class BagRepository {
         return quantity[0];
     }
 
-    public ArrayList<Product> getbaguser(String user){
+    public Bag getbaguser(String user){
         String sql ="SELECT bag.* FROM bag WHERE bag.username = ?;";
         List<Bag> temp = jdbc.query(sql,new BagRowMapper(),user);
         if (temp.isEmpty()){
@@ -59,11 +65,11 @@ public class BagRepository {
         }
         else {
             ArrayList<Product> ListProduct = new ArrayList<>();
-            temp.get(0).getListProduct().forEach((n, i) -> {
+            temp.get(0).getListProduct().forEach((n) -> {
                 ListProduct.add(n);
             });
-
-            return ListProduct;
+            Bag bag = new Bag(ListProduct, user);
+            return bag;
         }
     }
 
@@ -72,7 +78,7 @@ public class BagRepository {
         List<Bag> temp = jdbc.query(sql,new BagRowMapper(),user);
 
         ArrayList<Product> ListProduct = new ArrayList<>();
-        temp.get(0).getListProduct().forEach((n, i) -> {
+        temp.get(0).getListProduct().forEach((n) -> {
             ListProduct.add(n);
         });
         Gson gson = new Gson();
@@ -97,7 +103,10 @@ public class BagRepository {
 
     public void setQuantity(Product produit, String user, int quantity){
         deleteFromBag(produit,user);
-        ArrayList<Product> ListProduct = getbaguser(user);
+        ArrayList<Product> ListProduct = new ArrayList<>();
+        getbaguser(user).getListProduct().forEach((n) -> {
+            ListProduct.add(n);
+        });
         for(int i = 0; i < quantity; i++){
             ListProduct.add(produit);
         }

@@ -25,6 +25,8 @@ class TEST_Gestion_Bag {
 
     private ArrayList<Product> baglist = new ArrayList<Product>();
 
+    private Bag bagtest = new Bag(baglist, "test");
+
     private Product produit = new Product(1, "test", 1, 1);
 
     @BeforeEach
@@ -38,32 +40,29 @@ class TEST_Gestion_Bag {
     @Test
     void testAddToBag() {
         bagOutMock.AddToBag(produit, "test");
-
-        when(bagOutMock.getbaguser("test")).thenReturn(baglist);
-        assertTrue(bagOutMock.getbaguser("test").contains(produit));
+        when(bagOutMock.getbaguser("test")).thenReturn(bagtest);
+        assertEquals(bagOutMock.getbaguser("test"), bagtest);
     }
 
     @Test
     void testSuppFromBag() {
-
         bagOutMock.AddToBag(produit, "test");
-        when(bagOutMock.getbaguser("test")).thenReturn(baglist);
-        assertTrue(bagOutMock.getbaguser("test").contains(produit));
+        when(bagOutMock.getbaguser("test")).thenReturn(bagtest);
+        assertEquals(bagOutMock.getbaguser("test"), bagtest);
 
         bagOutMock.SuppFromBag(produit, "test");
-        when(bagOutMock.getbaguser("test")).thenReturn(new ArrayList<Product>());
-        assertFalse(bagOutMock.getbaguser("test").contains(produit));
+        bagtest.getListProduct().remove(produit);
+        when(bagOutMock.getbaguser("test")).thenReturn(bagtest);
+        assertNotEquals(bagOutMock.getbaguser("test"), bagtest);
     }
 
     @Test
     void testResetBag() {
-        bagOutMock.AddToBag(produit, "test");
-        when(bagOutMock.getbaguser("test")).thenReturn(baglist);
-        assertTrue(bagOutMock.getbaguser("test").contains(produit));
-
         bagOutMock.ResetBag("test");
-        when(bagOutMock.getbaguser("test")).thenReturn(new ArrayList<Product>());
-        assertFalse(bagOutMock.getbaguser("test").contains(produit));
+        bagtest.getListProduct().clear();
+        ArrayList<Product> bagtest2 = new ArrayList<Product>();
+        when(bagOutMock.getbaguser("test").getListProduct()).thenReturn(bagtest2);
+        assertEquals(bagOutMock.getbaguser("test"), bagtest);
     }
 
     @Test
@@ -82,7 +81,7 @@ class TEST_Gestion_Bag {
     void testGetBagUser() {
         bagOutMock.AddToBag(produit, "test");
 
-        when(bagOutMock.getbaguser("test")).thenReturn(baglist);
+        when(bagOutMock.getbaguser("test")).thenReturn(bagtest);
         assertEquals(List.of(produit), bagOutMock.getbaguser("test"));
     }
 }

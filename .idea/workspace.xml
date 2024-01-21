@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1e13f3f3-9646-433b-bc79-e28fb3f17376" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Yaml/Bag+User.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Yaml/Bag+User.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/in/web/TempAdapterWebBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/in/web/TempAdapterWebBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/BagAdapterPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/BagAdapterPersistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/model/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/model/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/service/Gestion_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/service/Gestion_Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/in/UseCase_In_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/in/UseCase_In_Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/out/Bag_Out.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/out/Bag_Out.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Gestion_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Gestion_Bag.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +61,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -91,6 +101,7 @@
     "database.data.extractors.current.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "rework",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/admin/IdeaProjects/Lotus/Yaml",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -109,6 +120,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\Lotus\Yaml" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.TEST_addToBag.testSetQuantity">
     <configuration name="TEST_addToBag.testAddToBag" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -278,7 +294,7 @@
       <workItem from="1705744954800" duration="4099000" />
       <workItem from="1705749974770" duration="6295000" />
       <workItem from="1705790456146" duration="13559000" />
-      <workItem from="1705836066653" duration="16567000" />
+      <workItem from="1705836066653" duration="21941000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 package be.heh.lotus.adapter.out.persistance;
 
 import be.heh.lotus.adapter.out.persistance.repository.BagRepository;
+import be.heh.lotus.application.domain.model.Bag;
 import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.domain.model.User;
 import be.heh.lotus.application.port.out.Bag_Out;
@@ -32,7 +33,7 @@ public class BagAdapterPersistence implements Bag_Out {
     }
 
     @Override
-    public ArrayList<Product> getbaguser(String user) {
+    public Bag getbaguser(String user) {
         return bagRepository.getbaguser(user);
     }
 }

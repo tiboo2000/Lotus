@@ -2,7 +2,6 @@ package be.heh.lotus.application.domain.service;
 
 import be.heh.lotus.application.domain.model.Bag;
 import be.heh.lotus.application.domain.model.Product;
-import be.heh.lotus.application.domain.model.User;
 import be.heh.lotus.application.port.in.UseCase_In_Bag;
 import be.heh.lotus.application.port.out.Bag_Out;
 
@@ -38,5 +37,14 @@ public class Gestion_Bag implements UseCase_In_Bag {
             case "fastsub":
                 bag_out.setQuantity(produit, user, qtttomdf - 1);
         }
+    }
+
+    @Override
+    public Bag getBagUser(String user) {
+        return bag_out.getbaguser(user);
+    }
+    @Override
+    public int getQuantity(Product produit, String user) {
+        return bag_out.getQuantity(produit, user);
     }
 }

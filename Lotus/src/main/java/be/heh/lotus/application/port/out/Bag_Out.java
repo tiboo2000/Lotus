@@ -1,5 +1,6 @@
 package be.heh.lotus.application.port.out;
 
+import be.heh.lotus.application.domain.model.Bag;
 import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.domain.model.User;
 
@@ -16,6 +17,6 @@ public interface Bag_Out {
 
     int getQuantity(Product produit, String user);
 
-    ArrayList<Product> getbaguser(String user);
+    Bag getbaguser(String user);
 
 }

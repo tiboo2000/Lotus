@@ -13,15 +13,12 @@ public class Bag {
 
     private int id;
 
-    private LinkedHashMap<Product, Integer> ListProduct;
+    private ArrayList<Product> ListProduct;
 
     private String User ;
 
     public Bag(ArrayList<Product> listProduct, String User) {
-        ListProduct = new LinkedHashMap<>();
-        for (Product product : listProduct) {
-            ListProduct.put(product, 1);
-        }
+        this.ListProduct = listProduct;
         this.User = User;
     }
 }
