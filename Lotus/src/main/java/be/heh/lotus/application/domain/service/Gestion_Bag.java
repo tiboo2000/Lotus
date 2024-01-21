@@ -14,22 +14,22 @@ public class Gestion_Bag implements UseCase_In_Bag {
     public Gestion_Bag(Bag_Out bag_out){this.bag_out = bag_out;}
 
     @Override
-    public void AddToBag(Product produit, User user) {
+    public void AddToBag(Product produit, String user) {
         bag_out.AddToBag(produit, user);
     }
 
     @Override
-    public void SuppFromBag(Product produit, User user) {
+    public void SuppFromBag(Product produit, String user) {
         bag_out.SuppFromBag(produit, user);
     }
 
     @Override
-    public void ResetBag(User user) {
+    public void ResetBag(String user) {
         bag_out.ResetBag(user);
     }
 
     @Override
-    public void modifyQuantity(int quattinit, int qtttomdf, String operation,User user, Product produit) {
+    public void modifyQuantity(int quattinit, int qtttomdf, String operation,String user, Product produit) {
         switch (operation){
             case "set":
                 bag_out.setQuantity(produit, user, qtttomdf);

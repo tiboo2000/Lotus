@@ -15,13 +15,13 @@ public class Bag {
 
     private LinkedHashMap<Product, Integer> ListProduct;
 
-    private User BagOfUser ;
+    private String User ;
 
-    public Bag(ArrayList<Product> listProduct, User bagOfUser) {
+    public Bag(ArrayList<Product> listProduct, String User) {
         ListProduct = new LinkedHashMap<>();
         for (Product product : listProduct) {
             ListProduct.put(product, 1);
         }
-        BagOfUser = bagOfUser;
+        this.User = User;
     }
 }

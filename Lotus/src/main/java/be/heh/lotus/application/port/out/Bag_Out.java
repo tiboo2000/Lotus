@@ -6,16 +6,16 @@ import be.heh.lotus.application.domain.model.User;
 import java.util.ArrayList;
 
 public interface Bag_Out {
-    void AddToBag(Product produit, User user);
+    void AddToBag(Product produit, String user);
 
-    void SuppFromBag(Product produit, User user);
+    void SuppFromBag(Product produit, String user);
 
-    void ResetBag(User user);
+    void ResetBag(String user);
 
-    void setQuantity(Product produit, User user, int quantity);
+    void setQuantity(Product produit, String user, int quantity);
 
-    int getQuantity(Product produit, User user);
+    int getQuantity(Product produit, String user);
 
-    ArrayList<Product> getbaguser(User user);
+    ArrayList<Product> getbaguser(String user);
 
 }

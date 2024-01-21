@@ -27,8 +27,7 @@ public class BagRowMapper implements RowMapper<Bag> {
             ArrayList<String> toproduct = new ArrayList<String>(Arrays.asList(temp.split(";")));
             ListProduct.add(new Product(Integer.parseInt(toproduct.get(0)) , toproduct.get(1), Double.parseDouble(toproduct.get(2)), Integer.parseInt(toproduct.get(3))));
         }
-        User user = new User(rs.getString("username"), "null", 0, 0, ListProduct);
 
-        return new Bag(user.getPannier(), user);
+        return new Bag(ListProduct, rs.getString("username"));
     }
 }

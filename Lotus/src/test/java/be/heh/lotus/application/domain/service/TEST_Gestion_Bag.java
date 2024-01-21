@@ -37,59 +37,52 @@ class TEST_Gestion_Bag {
 
     @Test
     void testAddToBag() {
-        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
-        bagOutMock.AddToBag(produit, user);
+        bagOutMock.AddToBag(produit, "test");
 
-        when(bagOutMock.getbaguser(user)).thenReturn(baglist);
-        assertTrue(bagOutMock.getbaguser(user).contains(produit));
+        when(bagOutMock.getbaguser("test")).thenReturn(baglist);
+        assertTrue(bagOutMock.getbaguser("test").contains(produit));
     }
 
     @Test
     void testSuppFromBag() {
-        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
-        bagOutMock.AddToBag(produit, user);
-        when(bagOutMock.getbaguser(user)).thenReturn(baglist);
-        assertTrue(bagOutMock.getbaguser(user).contains(produit));
+        bagOutMock.AddToBag(produit, "test");
+        when(bagOutMock.getbaguser("test")).thenReturn(baglist);
+        assertTrue(bagOutMock.getbaguser("test").contains(produit));
 
-        bagOutMock.SuppFromBag(produit, user);
-        when(bagOutMock.getbaguser(user)).thenReturn(new ArrayList<Product>());
-        assertFalse(bagOutMock.getbaguser(user).contains(produit));
+        bagOutMock.SuppFromBag(produit, "test");
+        when(bagOutMock.getbaguser("test")).thenReturn(new ArrayList<Product>());
+        assertFalse(bagOutMock.getbaguser("test").contains(produit));
     }
 
     @Test
     void testResetBag() {
-        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
+        bagOutMock.AddToBag(produit, "test");
+        when(bagOutMock.getbaguser("test")).thenReturn(baglist);
+        assertTrue(bagOutMock.getbaguser("test").contains(produit));
 
-        bagOutMock.AddToBag(produit, user);
-        when(bagOutMock.getbaguser(user)).thenReturn(baglist);
-        assertTrue(bagOutMock.getbaguser(user).contains(produit));
-
-        bagOutMock.ResetBag(user);
-        when(bagOutMock.getbaguser(user)).thenReturn(new ArrayList<Product>());
-        assertFalse(bagOutMock.getbaguser(user).contains(produit));
+        bagOutMock.ResetBag("test");
+        when(bagOutMock.getbaguser("test")).thenReturn(new ArrayList<Product>());
+        assertFalse(bagOutMock.getbaguser("test").contains(produit));
     }
 
     @Test
     void testModifyQuantity_SetOperation() {
-        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
 
-        bagOutMock.AddToBag(produit, user);
-        when(bagOutMock.getQuantity(produit, user)).thenReturn(1);
-        assertEquals(1, bagOutMock.getQuantity(produit, user));
+        bagOutMock.AddToBag(produit, "test");
+        when(bagOutMock.getQuantity(produit, "test")).thenReturn(1);
+        assertEquals(1, bagOutMock.getQuantity(produit, "test"));
 
-        bagOutMock.setQuantity(produit, user, 2);
-        when(bagOutMock.getQuantity(produit, user)).thenReturn(2);
-        assertEquals(2, bagOutMock.getQuantity(produit, user));
+        bagOutMock.setQuantity(produit, "test", 2);
+        when(bagOutMock.getQuantity(produit, "test")).thenReturn(2);
+        assertEquals(2, bagOutMock.getQuantity(produit, "test"));
     }
 
     @Test
     void testGetBagUser() {
-        User user = new User("test", "test", 50, 12, new ArrayList<Product>());
+        bagOutMock.AddToBag(produit, "test");
 
-        bagOutMock.AddToBag(produit, user);
-
-        when(bagOutMock.getbaguser(user)).thenReturn(baglist);
-        assertEquals(List.of(produit), bagOutMock.getbaguser(user));
+        when(bagOutMock.getbaguser("test")).thenReturn(baglist);
+        assertEquals(List.of(produit), bagOutMock.getbaguser("test"));
     }
 }
