@@ -65,9 +65,9 @@ public class Gestion_product_Test {
         products.add(prod1);
         products.add(new Product(2, "produit2", 30, 1));
 
-        when(productOutMock.getAllProductsByCategoryId(prod1.getCategoryID())).thenReturn(products);
+        when(productOutMock.getAllProductsByCategoryId(prod1.getCategoryId())).thenReturn(products);
 
-        List<Product> results = gestionProduct.getAllProductsByCategoryId(prod1.getCategoryID());
+        List<Product> results = gestionProduct.getAllProductsByCategoryId(prod1.getCategoryId());
         Assertions.assertFalse(results.isEmpty());
         Assertions.assertEquals(2, results.size());
         Assertions.assertEquals(prod1.getName(), results.get(0).getName());

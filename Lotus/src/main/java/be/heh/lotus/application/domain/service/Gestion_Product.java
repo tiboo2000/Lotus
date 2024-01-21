@@ -3,12 +3,14 @@ package be.heh.lotus.application.domain.service;
 import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.port.in.UseCase_In_Product;
 import be.heh.lotus.application.port.out.Product_Out;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class Gestion_Product implements UseCase_In_Product {
     private final Product_Out productOut;
-
+    @Autowired
     public Gestion_Product(Product_Out productOut) {
         this.productOut = productOut;
     }
