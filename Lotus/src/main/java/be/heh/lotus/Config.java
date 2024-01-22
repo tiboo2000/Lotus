@@ -19,6 +19,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableJdbcRepositories
@@ -41,5 +43,18 @@ public class Config {
     @Bean
     public UseCase_In_Bag getBagUseCase(){
         return new Gestion_Bag(new BagAdapterPersistence(bagRepository));
+    }
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/*")
+                        .allowedOrigins("http://localhost:3000") // Remplacez par l'URL de votre application React
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS")
+                        .allowedHeaders("")
+                        .allowCredentials(true);
+            }
+        };
     }
 }

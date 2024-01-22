@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a2c5440-9dbb-46c0-ae8c-1c340df7d223" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/adapter/in/web/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/adapter/in/web/ProductControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/.eslintcache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/Lotus">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -37,9 +40,9 @@
       </map>
     </option>
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -59,7 +62,7 @@
     "RequestMappingsPanelWidth1": "75",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.LotusApp.executor": "Run",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
