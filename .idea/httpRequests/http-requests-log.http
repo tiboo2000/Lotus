@@ -1,0 +1,180 @@
+GET http://localhost:9090/products?idCategory=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T141743.200.json
+
+###
+
+GET http://localhost:9090/products?idCategory=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T141653.200.json
+
+###
+
+GET http://localhost:9090/products?categoryId=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T141640.400.json
+
+###
+
+GET http://localhost:9090/products?categoryId=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T141335.400.json
+
+###
+
+GET http://localhost:9090/product?categoryId=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T141329.405.json
+
+###
+
+GET http://localhost:9090/products?categoryId=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T141311.400.json
+
+###
+
+POST http://localhost:9090/product
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 3,
+  "name": "Banane",
+  "price": 5,
+  "categoryId": 1
+}
+
+<> 2024-01-22T140314.500.json
+
+###
+
+POST http://localhost:9090/product
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 3,
+  "name": "Banane",
+  "price": 5,
+  "categoryId": 1
+}
+
+<> 2024-01-22T140258.201.txt
+
+###
+
+POST http://localhost:9090/product
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 3,
+  "name": "Banane",
+  "price": 5,
+  "categoryId": 1
+}
+
+<> 2024-01-22T140238.500.json
+
+###
+
+DELETE http://localhost:9090/product/5
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T140215.500.json
+
+###
+
+DELETE http://localhost:9090/product/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T140201.200.txt
+
+###
+
+POST http://localhost:9090/product
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 3,
+  "name": "Banane",
+  "price": 5,
+  "categoryId": 1
+}
+
+<> 2024-01-22T135544.201.txt
+
+###
+
+GET http://localhost:9090/product/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T135015.200.json
+
+###
+
+GET http://localhost:9090/product/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T134645.500.json
+
+###
+
+GET http://localhost:9090/product/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T134357.500.json
+
+###
+
+GET http://localhost:9090/product/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T133918.500.json
+
+###
+
