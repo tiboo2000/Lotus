@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a2c5440-9dbb-46c0-ae8c-1c340df7d223" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/in/web/AdapterWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/in/web/AdapterWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/ProductAdapterPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/ProductAdapterPersistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/service/Gestion_Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/service/Gestion_Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/in/UseCase_In_Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/in/UseCase_In_Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/out/Product_Out.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/out/Product_Out.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/adapter/in/web/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/adapter/in/web/ProductControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,7 @@
     "RequestMappingsPanelWidth1": "75",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.LotusApp.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
