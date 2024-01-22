@@ -106,7 +106,7 @@ public class ProductControllerTest {
 
     @Test
     public void addBagWeb_ShouldAddToBag() throws Exception {
-        Product product = new Product(/* paramètres du produit */);
+        Product product = new Product();
         ObjectMapper objectMapper = new ObjectMapper();
         String productJson = objectMapper.writeValueAsString(product);
 
@@ -130,7 +130,7 @@ public class ProductControllerTest {
 
     @Test
     public void removeProductFromBag_ShouldDeleteProductFromBag() throws Exception {
-        Product product = new Product(/* paramètres du produit */);
+        Product product = new Product(1, "Test Product", 100.0, 1);
         ObjectMapper objectMapper = new ObjectMapper();
         String productJson = objectMapper.writeValueAsString(product);
 
@@ -145,7 +145,7 @@ public class ProductControllerTest {
 
     @Test
     public void updateBagWeb_ShouldUpdateBag() throws Exception {
-        Product product = new Product(/* paramètres du produit */);
+        Product product = new Product(1, "Test Product", 100.0, 1);
         ObjectMapper objectMapper = new ObjectMapper();
         String productJson = objectMapper.writeValueAsString(product);
 
