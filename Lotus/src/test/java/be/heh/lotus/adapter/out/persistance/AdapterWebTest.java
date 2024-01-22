@@ -1,10 +1,10 @@
 package be.heh.lotus.adapter.out.persistance;
 
 import be.heh.lotus.adapter.in.web.AdapterWeb;
-import be.heh.lotus.application.domain.model.Bag;
 import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.port.in.UseCase_In_Bag;
 import be.heh.lotus.application.port.in.UseCase_In_Categories;
+import be.heh.lotus.application.port.in.UseCase_In_Product;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.http.HttpStatus;
@@ -20,7 +20,8 @@ public class AdapterWebTest {
         // Arrange
         UseCase_In_Categories categoriesUseCase = Mockito.mock(UseCase_In_Categories.class);
         UseCase_In_Bag bagUseCase = Mockito.mock(UseCase_In_Bag.class);
-        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase, bagUseCase);
+        UseCase_In_Product productUseCase = Mockito.mock(UseCase_In_Product.class);
+        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase,productUseCase,bagUseCase);
 
         Product product = new Product(1,"test", 2 ,1 );
         String user = "testUser";
@@ -41,7 +42,8 @@ public class AdapterWebTest {
         // Arrange
         UseCase_In_Categories categoriesUseCase = Mockito.mock(UseCase_In_Categories.class);
         UseCase_In_Bag bagUseCase = Mockito.mock(UseCase_In_Bag.class);
-        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase, bagUseCase);
+        UseCase_In_Product productUseCase = Mockito.mock(UseCase_In_Product.class);
+        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase,productUseCase,bagUseCase);
 
         Product product = new  Product(1,"test", 2 ,1 );
         String user = "testUser";
@@ -59,7 +61,8 @@ public class AdapterWebTest {
         // Arrange
         UseCase_In_Categories categoriesUseCase = Mockito.mock(UseCase_In_Categories.class);
         UseCase_In_Bag bagUseCase = Mockito.mock(UseCase_In_Bag.class);
-        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase, bagUseCase);
+        UseCase_In_Product productUseCase = Mockito.mock(UseCase_In_Product.class);
+        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase,productUseCase,bagUseCase);
 
         String user = "testUser";
 
@@ -76,7 +79,8 @@ public class AdapterWebTest {
         // Arrange
         UseCase_In_Categories categoriesUseCase = Mockito.mock(UseCase_In_Categories.class);
         UseCase_In_Bag bagUseCase = Mockito.mock(UseCase_In_Bag.class);
-        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase, bagUseCase);
+        UseCase_In_Product productUseCase = Mockito.mock(UseCase_In_Product.class);
+        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase,productUseCase,bagUseCase);
 
         Product product = new  Product(1,"test", 2 ,1 );
         String user = "testUser";
@@ -94,7 +98,8 @@ public class AdapterWebTest {
         // Arrange
         UseCase_In_Categories categoriesUseCase = Mockito.mock(UseCase_In_Categories.class);
         UseCase_In_Bag bagUseCase = Mockito.mock(UseCase_In_Bag.class);
-        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase, bagUseCase);
+        UseCase_In_Product productUseCase = Mockito.mock(UseCase_In_Product.class);
+        AdapterWeb adapterWeb = new AdapterWeb(categoriesUseCase,productUseCase,bagUseCase);
 
         Product product = new  Product(1,"test", 2 ,1 );
         String user = "testUser";
