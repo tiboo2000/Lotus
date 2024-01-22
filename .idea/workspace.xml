@@ -5,7 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a2c5440-9dbb-46c0-ae8c-1c340df7d223" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/41e4b2a6-47e9-407b-91fe-7414cbc1734b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/41e4b2a6-47e9-407b-91fe-7414cbc1734b/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/41e4b2a6-47e9-407b-91fe-7414cbc1734b/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/41e4b2a6-47e9-407b-91fe-7414cbc1734b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/41e4b2a6-47e9-407b-91fe-7414cbc1734b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-21T214522.404.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-21T214643.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-21T214921.202.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-21T215004.202.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-21T215039.202.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T133645.202.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T134315.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T134330.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T134940.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T135017.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T135033.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T135208.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T135248.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T135308.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T135449.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T135506.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T140228.400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T140335.400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T140347.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2024-01-22T140410.202.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/BagAdapterPersistence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/out/persistance/repository/BagRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotus/src/main/resources/schemaBag.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/adapter/out/persistance/AdapterWebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/adapter/out/persistance/TEST_addToBag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/model/TEST_Bag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yaml/Bag.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/in/web/AdapterWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/adapter/in/web/AdapterWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/model/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/model/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/service/Gestion_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/domain/service/Gestion_Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/in/UseCase_In_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/in/UseCase_In_Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/out/Bag_Out.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/application/port/out/Bag_Out.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/port/in/UseCase_In_Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/port/in/UseCase_In_Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Bag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Gestion_Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/test/java/be/heh/lotus/application/domain/service/TEST_Gestion_Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Yaml/Bag+User.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +106,7 @@
     "RequestMappingsPanelWidth1": "75",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.LotusApp.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
