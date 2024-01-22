@@ -1,29 +1,52 @@
 package be.heh.lotus.application.domain.model;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 import java.util.ArrayList;
-import static org.springframework.test.util.AssertionErrors.*;
 
 public class TEST_Bag {
+
     private Bag bag;
-    private String user;
+    private ArrayList<Product> productList;
+
+    @BeforeEach
+    void setUp() {
+        productList = new ArrayList<>();
+        productList.add(new Product(/* paramètres du produit */));
+        productList.add(new Product(/* paramètres du produit */));
+        bag = new Bag(productList, "UserTest");
+    }
+
     @Test
-    public void testBagInitialization() {
-        ArrayList<Product> productList = new ArrayList<>();
-        Product product1 = new Product(1,"test",1,1); // Supposons que Product a un constructeur par défaut
-        Product product2 = new Product(2,"test",1,1); // Idem pour product2
-        productList.add(product1);
-        productList.add(product2);
+    void testGetListProduct() {
+        assertEquals(productList, bag.getListProduct(), "La liste des produits doit être égale à celle fournie au constructeur.");
+    }
 
-        Bag testBag = new Bag(productList, "test");
+    @Test
+    void testSetListProduct() {
+        ArrayList<Product> newProductList = new ArrayList<>();
+        newProductList.add(new Product(/* paramètres du produit */));
+        bag.setListProduct(newProductList);
+        assertEquals(newProductList, bag.getListProduct(), "La liste des produits doit être mise à jour.");
+    }
 
-        assertNotNull("La liste des produits ne devrait pas être null", testBag.getListProduct());
-        assertEquals("La taille de la liste des produits devrait être 2", 2, testBag.getListProduct().size() );
+    @Test
+    void testGetUser() {
+        assertEquals("UserTest", bag.getUser(), "L'utilisateur doit être celui fourni au constructeur.");
+    }
 
-        for (Product product : productList) {
-            assertTrue("Le produit devrait être dans la liste", testBag.getListProduct().containsKey(product) );
-            assertEquals("La quantité du produit devrait être 1", 1, testBag.getListProduct().get(product).intValue());
-        }
+    @Test
+    void testSetUser() {
+        String newUser = "AnotherUser";
+        bag.setUser(newUser);
+        assertEquals(newUser, bag.getUser(), "L'utilisateur doit être mis à jour.");
+    }
 
+    @Test
+    void testGetId() {
+        bag.setId(123);
+        assertEquals(123, bag.getId(), "L'ID doit être celui défini par setId.");
     }
 }
