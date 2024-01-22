@@ -1,3 +1,165 @@
+GET http://localhost:9090/bag/getquantity?nameuser=test
+Content-Type: application/json
+Content-Length: 62
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id":1,
+  "name":"test",
+  "price":1.0,
+  "categoryId":1
+}
+
+<> 2024-01-22T140410.202.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?nameuser=test
+Content-Type: application/json
+Content-Length: 62
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id":1,
+  "name":"test",
+  "price":1.0,
+  "categoryId":1
+}
+
+<> 2024-01-22T140347.400.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?nameuser=test
+Content-Type: application/json
+{:
+  "id": 1,
+  "name": "test",
+  "price": 1.0,
+  "categoryId": 1
+}:
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T140335.400.html
+
+###
+
+GET http://localhost:9090/bag/getquantity?product=
+Content-Type: application/json?nameuser=test
+{"id": 1,"name":"test","price":1.0,"categoryId":1}
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T140228.400.html
+
+###
+
+GET http://localhost:9090/bag/getquantity?product={"id":1,"name":"test","price":1.0,"categoryId":1}&nameuser=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T135506.500.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product=[{"id":1,"name":"test","price":1.0,"categoryId":1}]&nameuser=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T135449.500.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product={"id":1,"name":"test","price":1.0,"categoryId":1}&nameuser=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T135308.500.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product={"id":1,"name":"test","price":1.0,"categoryId":1}&?nameuser=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T135248.400.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product={"id":1,"name":"test","price":1.0,"categoryId":1}?nameuser=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T135208.400.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product={"id":1,"name":"test","price":1.0,"categoryId":1}?nameuser=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T135033.400.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product={"id":1,"name":"test","price":1.0,"categoryId":1}?nameuser=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T135017.400.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product={"id":1,"name":"test","price":1.0,"categoryId":1}?user=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T134940.400.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product=[{"id":1,"name":"test","price":1.0,"categoryId":1}]?user=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T134330.500.json
+
+###
+
+GET http://localhost:9090/bag/getquantity?product={"id":1,"name":"test","price":1.0,"categoryId":1}?user=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T134315.500.json
+
+###
+
+GET http://localhost:9090/bag?user=test
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-22T133645.202.json
+
+###
+
 GET http://localhost:9090/bag?user=test
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)

@@ -64,7 +64,7 @@ public class AdapterWeb {
                 .body(bagArrayList);
     }
     @GetMapping("/bag/getquantity")
-    public ResponseEntity<Integer> getBagWeb(@RequestParam(required = true) Product product, @RequestParam(required = true) String nameuser, Errors errors){
+    public ResponseEntity<Integer> getBagWeb(@RequestBody(required = true) Product product, @RequestParam(required = true) String nameuser, Errors errors){
         if(errors.hasErrors()){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
         }
@@ -91,7 +91,7 @@ public class AdapterWeb {
     }
 
     @DeleteMapping("/bag/delete/product")
-    public ResponseEntity<String> removeBagWeb(@RequestParam(required = true)String nameuser, @RequestParam(required = true)Product product,Errors errors){
+    public ResponseEntity<String> removeBagWeb(@RequestParam(required = true)String nameuser, @RequestBody(required = true)Product product,Errors errors){
         if(errors.hasErrors()){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Failed Product deleted");
         }
@@ -100,7 +100,7 @@ public class AdapterWeb {
     }
 
     @PutMapping("/bag/update")
-    public ResponseEntity<String> updateBagWeb(@RequestParam(required = true)String nameuser, @RequestParam(required = true)Product product, @RequestParam(required = true)int quantity, @RequestParam(required = true)String operation,Errors errors){
+    public ResponseEntity<String> updateBagWeb(@RequestParam(required = true)String nameuser, @RequestBody(required = true)Product product, @RequestParam(required = true)int quantity, @RequestParam(required = true)String operation,Errors errors){
         if(errors.hasErrors()){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Failed Product updated");
         }
