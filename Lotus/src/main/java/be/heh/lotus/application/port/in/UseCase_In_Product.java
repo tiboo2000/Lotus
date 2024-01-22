@@ -9,4 +9,6 @@ public interface UseCase_In_Product {
     void updateProduct(Product product);
     Product getProductById(int id);
     List<Product> getAllProductsByCategoryId(int categoryId);
+
+    List<Product> getAllProducts();
 }

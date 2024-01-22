@@ -46,4 +46,9 @@ public class ProductRepository {
         Integer count = jdbcTemplate.queryForObject(sql, new Object[]{id}, Integer.class);
         return count != null && count > 0;
     }
+
+    public List<Product> getAllProductsRep() {
+        String sql = "SELECT * FROM products";
+        return jdbcTemplate.query(sql, new ProductRowMapper());
+    }
 }

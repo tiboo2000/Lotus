@@ -82,6 +82,14 @@ public class AdapterWeb {
                 ResponseEntity.notFound().build();
     }
 
+    @GetMapping("/products/all")
+    public ResponseEntity<List<Product>> getAllProducts() {
+        List<Product> products = productUseCase.getAllProducts();
+        return products != null && !products.isEmpty() ?
+                ResponseEntity.ok(products) :
+                ResponseEntity.notFound().build();
+    }
+
     //Max Bag
     @GetMapping("/bag")
     public ResponseEntity<Bag> getUserBag(@RequestParam(required = true)String user){

@@ -49,4 +49,9 @@ public class Gestion_Product implements UseCase_In_Product {
     public List<Product> getAllProductsByCategoryId(int categoryId) {
         return productOut.getAllProductsByCategoryId(categoryId);
     }
+
+    @Override
+    public List<Product> getAllProducts() {
+        return productOut.getAllProducts();
+    }
 }

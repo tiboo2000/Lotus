@@ -10,4 +10,6 @@ public interface Product_Out {
     Product getProductById(int id);
     List<Product> getAllProductsByCategoryId(int categoryId);
     boolean existsProductById(int id);
+
+    List<Product> getAllProducts();
 }

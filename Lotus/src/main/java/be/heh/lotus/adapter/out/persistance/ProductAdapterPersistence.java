@@ -45,4 +45,8 @@ public class ProductAdapterPersistence implements Product_Out {
     public boolean existsProductById(int id) {
         return productRepository.existsProductByIdRep(id);
     }
+    @Override
+    public List<Product> getAllProducts() {
+        return productRepository.getAllProductsRep();
+    }
 }
