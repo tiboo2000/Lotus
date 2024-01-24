@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    align-items: center;
+  }
+  
+  .nav-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .nav-btn:hover {
+    background-color: #777;
+  }
+  
+  .nav-btn-cart {
+    margin-left: auto; /* Cela poussera le bouton du panier vers la droite */
+  }

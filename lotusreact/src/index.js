@@ -4,11 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Bag from './composent/bag';
-import Page from './composent/page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Page />
+    <App />
 );
 
 // If you want to start measuring performance in your app, pass a function
