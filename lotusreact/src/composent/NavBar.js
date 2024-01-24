@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // Importez Axios
+import Bag from './bag';
 
 const NavBar = ({ onAddProduct, onRemoveProduct, onGoToCart }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,12 +11,17 @@ const NavBar = ({ onAddProduct, onRemoveProduct, onGoToCart }) => {
     categoryId: '',
   });
 
+  const [cart, setCart] = useState(false);
   const handleAddProductClick = () => {
     setIsModalOpen(true);
   };
 
   const handleModalClose = () => {
     setIsModalOpen(false);
+  };
+
+  const handleShowcartClick = () => {
+      setCart(!cart);
   };
 
   const handleInputChange = (e) => {
@@ -46,7 +52,7 @@ const NavBar = ({ onAddProduct, onRemoveProduct, onGoToCart }) => {
       <button onClick={handleAddProductClick} className="nav-btn">
         Ajouter Produit
       </button>
-      <button onClick={onGoToCart} className="nav-btn nav-btn-cart">
+      <button onClick={handleShowcartClick} className="nav-btn nav-btn-cart">
         Panier
       </button>
 
@@ -95,6 +101,7 @@ const NavBar = ({ onAddProduct, onRemoveProduct, onGoToCart }) => {
           </div>
         </div>
       )}
+      {cart && <Bag/>}
     </nav>
   );
 };

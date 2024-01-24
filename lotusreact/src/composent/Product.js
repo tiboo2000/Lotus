@@ -9,10 +9,10 @@ const ProductCard = ({ product, onAddToCart, onDeleteProduct }) => (
     <div className="product-price">Prix: {product.price} €</div>
     <div className="product-category">Id de la catégorie: {product.categoryId}</div>
     <div className="quantity-product">
-      <input type="number" min="1" max="10" step="1" value="1" />
+      <input type="number" min="1" max="10" step="1" defaultValue={1} id={"inputquantitytocart" + product.id}/>
     </div>
     <div className="ajout-panier">
-      <button onClick={() => onAddToCart(product)}>Ajouter au Panier</button>
+      <button onClick={() => onAddToCart(product,document.getElementById("inputquantitytocart" + product.id).value)}>Ajouter au Panier</button>
     </div>
     <div className="supprimer-produit">
       <button onClick={() => onDeleteProduct(product.id)}>Supprimer Produit</button>
@@ -35,8 +35,46 @@ const Product = () => {
       });
   }, []);
 
-  const handleAddToCart = (product) => {
-    //Ajouter le code pour ajouter au panier
+  const handleAddToCart = (product,newquantity) => {
+    // on ajoute le produit au panier
+    try {
+      axios.delete('http://localhost:9090/bag/delete/product', {
+          params: { nameuser:"test" },
+          data: product
+      });
+  } catch (error) {
+      console.error('Failed to delete product:', error);
+  }
+    axios.post('http://localhost:9090/bag/add',
+                {id: product.id,
+                name: product.name,
+                price: product.price,
+                categoryId: product.categoryId},
+                 {
+                params: {
+                    nameuser: "test"
+                }
+    })
+    //on change la quantite de produit
+    try {
+      axios.put('http://localhost:9090/bag/update',
+              {
+              id: product.id,
+              name: product.name,
+              price: product.price,
+              categoryId: product.categoryId
+              },
+              {
+              params: {
+                  nameuser: "test",
+                  quantity: newquantity,
+                  operation: "set"
+              }
+      })
+      }
+  catch (error) {
+      console.error('Failed change quantity product:', error);
+  }
   };
 
   const handleConfirmAddToCart = () => {

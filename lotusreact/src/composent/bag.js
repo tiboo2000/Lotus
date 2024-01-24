@@ -13,7 +13,7 @@ class Bag extends React.Component {
       tempQuantity: [],
       allproduct:[],
       productidandquantity:[],
-      intfullprice : 0,
+      intfullprice : [],
     };
   }
 
@@ -25,7 +25,9 @@ class Bag extends React.Component {
 
   fetchData = async () => {
     const result = await axios('http://localhost:9090/bag?user=test');
+    var tempprice = 0;
     result.data.listProduct.map((product) => {
+        tempprice = tempprice + product.price
         this.state.allproduct.push(product)
         if (!this.state.temp.includes(product.id)){
             this.state.temp.push(product.id)
@@ -42,11 +44,7 @@ class Bag extends React.Component {
             this.state.productidandquantity.push(1)
         }
     });
-
-    var temprange = this.state.productidandquantity.length
-    for (var i = 0; i < temprange; i = i +2) {
-        this.state.intfullprice = this.state.intfullprice + (this.state.productidandquantity[i] * this.state.productidandquantity[i+1])
-    }
+    this.state.intfullprice.push(tempprice);
     this.setState({ data: this.state.temp2});
     //const result2 = await axios('http://localhost:9090/bag/getquantity?id=1&name=test&price=1&categoryid=1&nameuser=test');
 }; 
@@ -75,9 +73,17 @@ class Bag extends React.Component {
                 }
         })
     }
+    getfullprice() {
+        let sum = 0;
+        document.querySelectorAll('.price').forEach((priceElement) => {
+            console.log(priceElement.textContent);
+            const price = parseFloat(priceElement.textContent);
+            sum += parseInt(price);
+        });
+        return sum;
+    }
 
     changeQuantity(product,user,newquantity){
-        console.log(product)
         try {
             axios.put('http://localhost:9090/bag/update',
                     {
@@ -120,7 +126,7 @@ class Bag extends React.Component {
                         <input type="number" onChange={(e) => { if(e.target.value!="" || e.target.value >0 )this.changeQuantity({id: product.id,name: 'test' /*changer*/,price: product.price,categoryId: product.categoryId}, "test", e.target.value)}} defaultValue={this.state.productidandquantity[this.state.productidandquantity.indexOf(product.id) + 1]} />
                     </div>
                     <div className="product-total">
-                        <p>${product.price}</p>
+                        <p className='price'>${product.price * this.state.productidandquantity[this.state.productidandquantity.indexOf(product.id) + 1]}</p>
                     </div>
                     <button onClick={() => this.deleteProduct("test", product)}>Remove</button>
                 </div>
