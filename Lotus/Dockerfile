@@ -1,6 +1,6 @@
 # Utilisez une image de base avec Gradle et Java 11
 FROM gradle:7.4.1-jdk17
-LABEL maintainer="LotusMaximilien"
+LABEL maintainer="Lotus"
 # Copiez votre code source dans l'image
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
