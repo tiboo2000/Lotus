@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a2c5440-9dbb-46c0-ae8c-1c340df7d223" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/java/be/heh/lotus/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lotus/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Lotus/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/src/composent/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/src/composent/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/src/composent/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/src/composent/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotusreact/src/composent/bag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lotusreact/src/composent/bag.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +300,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706022482035</updated>
       <workItem from="1706022485847" duration="14686000" />
-      <workItem from="1706098346059" duration="6836000" />
+      <workItem from="1706098346059" duration="11626000" />
     </task>
     <servers />
   </component>
