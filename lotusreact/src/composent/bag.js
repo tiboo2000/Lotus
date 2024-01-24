@@ -123,7 +123,7 @@ class Bag extends React.Component {
                         <p>${product.price}</p>
                     </div>
                     <div className="product-quantity">                                                                          
-                        <input type="number" onChange={(e) => { if(e.target.value!="" || e.target.value >0 )this.changeQuantity({id: product.id,name: 'test' /*changer*/,price: product.price,categoryId: product.categoryId}, "test", e.target.value)}} defaultValue={this.state.productidandquantity[this.state.productidandquantity.indexOf(product.id) + 1]} />
+                        <input type="number" onChange={(e) => { if(e.target.value!="" || e.target.value >0 )this.changeQuantity({id: product.id,name: product.name /*changer*/,price: product.price,categoryId: product.categoryId}, "test", e.target.value)}} defaultValue={this.state.productidandquantity[this.state.productidandquantity.indexOf(product.id) + 1]} />
                     </div>
                     <div className="product-total">
                         <p className='price'>${product.price * this.state.productidandquantity[this.state.productidandquantity.indexOf(product.id) + 1]}</p>
@@ -135,7 +135,7 @@ class Bag extends React.Component {
         </div>
         <div className="subtotal">
             <h2>Subtotal</h2>
-            <p>{this.state.intfullprice}</p>
+            <p>{this.state.intfullprice + '€'}</p>
         </div>
         <button>Proceed to Checkout</button>
         </div>
