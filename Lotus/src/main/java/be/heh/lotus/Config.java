@@ -32,6 +32,20 @@ public class Config {
     @Autowired
     BagRepository bagRepository;
     Bag_Out bagOut;
+
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                        .allowedOrigins("http://localhost:3000") // Remplacez par l'URL de votre application React
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS")
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
+            }
+        };
+    }
     @Bean
     public UseCase_In_Categories getCategoryUseCase(){
         return new GestionCategories(new CategoryAdapterPersistence(categoriesRepository));

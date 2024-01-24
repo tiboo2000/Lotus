@@ -6,6 +6,7 @@ import be.heh.lotus.application.domain.model.Product;
 import be.heh.lotus.application.port.in.UseCase_In_Bag;
 import be.heh.lotus.application.port.in.UseCase_In_Categories;
 import be.heh.lotus.application.port.in.UseCase_In_Product;
+import com.google.gson.Gson;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.Errors;
@@ -99,10 +100,12 @@ public class AdapterWeb {
                 .body(bagArrayList);
     }
     @GetMapping("/bag/getquantity")
-    public ResponseEntity<Integer> getBagWeb(@RequestBody(required = true) Product product, @RequestParam(required = true) String nameuser, Errors errors){
-        if(errors.hasErrors()){
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
-        }
+    public ResponseEntity<Integer> getBagWeb(@RequestParam(required = true) String id,
+                                             @RequestParam(required = true) String name,
+                                             @RequestParam(required = true) String price,
+                                             @RequestParam(required = true) String categoryid,
+                                             @RequestParam(required = true) String nameuser){
+        Product product=new Product(Integer.parseInt(id),name,Double.parseDouble(price),Integer.parseInt(categoryid));
         int bag=bagUseCase.getQuantity(product,nameuser);
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
@@ -135,11 +138,11 @@ public class AdapterWeb {
     }
 
     @PutMapping("/bag/update")
-    public ResponseEntity<String> updateBagWeb(@RequestParam(required = true)String nameuser, @RequestBody(required = true)Product product, @RequestParam(required = true)int quantity, @RequestParam(required = true)String operation,Errors errors){
+    public ResponseEntity<String> updateBagWeb(@RequestParam(required = true)String nameuser, @RequestParam(required = true)int quantity, @RequestParam(required = true)String operation,@RequestBody(required = true)Product product,Errors errors){
         if(errors.hasErrors()){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Failed Product updated");
         }
-        bagUseCase.modifyQuantity(bagUseCase.getQuantity(product, nameuser),quantity, operation, nameuser ,product);
+        bagUseCase.modifyQuantity(0,quantity, operation, nameuser ,product);
         return ResponseEntity.status(HttpStatus.CREATED).body("Quantity Product updated successfully");
     }
 }
