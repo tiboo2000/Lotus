@@ -103,11 +103,8 @@ public class BagRepository {
 
     public void setQuantity(Product produit, String user, int quantity){
         deleteFromBag(produit,user);
-        ArrayList<Product> ListProduct = new ArrayList<>();
-        getbaguser(user).getListProduct().forEach((n) -> {
-            ListProduct.add(n);
-        });
-        for(int i = 0; i < quantity; i++){
+        ArrayList<Product> ListProduct = new ArrayList<>(getbaguser(user).getListProduct());
+        for(int i = -1; i < quantity; i++){
             ListProduct.add(produit);
         }
         Gson gson = new Gson();

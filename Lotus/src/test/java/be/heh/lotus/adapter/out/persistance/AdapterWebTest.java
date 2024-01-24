@@ -28,9 +28,8 @@ public class AdapterWebTest {
         int quantity = 5;
 
         when(bagUseCase.getQuantity(product, user)).thenReturn(quantity);
-
         // Act
-        ResponseEntity<Integer> response = adapterWeb.getBagWeb(product, user, null);
+        ResponseEntity<Integer> response = adapterWeb.getBagWeb(  String.valueOf(product.getId()),product.getName(), String.valueOf(product.getPrice()), String.valueOf(product.getCategoryId()), user);
 
         // Assert
         assertEquals(HttpStatus.ACCEPTED, response.getStatusCode());
@@ -107,7 +106,7 @@ public class AdapterWebTest {
         String operation = "add";
 
         // Act
-        ResponseEntity<String> response = adapterWeb.updateBagWeb(user, product, quantity, operation, null);
+        ResponseEntity<String> response = adapterWeb.updateBagWeb(user, quantity, operation,product, null);
 
         // Assert
         assertEquals(HttpStatus.CREATED, response.getStatusCode());
