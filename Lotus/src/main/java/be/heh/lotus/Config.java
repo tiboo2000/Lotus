@@ -58,17 +58,4 @@ public class Config {
     public UseCase_In_Bag getBagUseCase(){
         return new Gestion_Bag(new BagAdapterPersistence(bagRepository));
     }
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/*")
-                        .allowedOrigins("http://localhost:3000") // Remplacez par l'URL de votre application React
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS")
-                        .allowedHeaders("")
-                        .allowCredentials(true);
-            }
-        };
-    }
 }

@@ -8,7 +8,7 @@ import Page from './composent/page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Page />
+    <Bag />
 );
 
 // If you want to start measuring performance in your app, pass a function
