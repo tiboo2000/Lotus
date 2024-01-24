@@ -1,0 +1,93 @@
+.shopping-cart {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .shopping-cart h1 {
+    text-align: center;
+  }
+  
+  .products {
+    margin-bottom: 20px;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .product-info p,
+  .product-price p,
+  .product-quantity input,
+  .product-total p {
+    margin: 0;
+  }
+  
+  .product-info {
+    flex: 3;
+  }
+  
+  .product-price,
+  .product-total {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .product-quantity {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .product-quantity input {
+    width: 40px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .subtotal h2 {
+    margin: 0;
+  }
+  
+  .subtotal p {
+    margin: 0;
+  }
+  
+  /* Bouton de validation */
+  .shopping-cart > button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .shopping-cart > button:hover {
+    background-color: #218838;
+  }
+  
